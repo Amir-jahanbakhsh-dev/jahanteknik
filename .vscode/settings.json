@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        
+    ]
+    ,
+  "emmet.includeLanguages": {
+   
+    "javascript": "javascriptreact"
+  }
+}
