@@ -11,3 +11,6 @@
     src: url(/public/Mj_Titr\ DF.ttf) format('ttf');
     }
 }
+header{
+  background-image: url(../public/image/r001.jpg);
+}
