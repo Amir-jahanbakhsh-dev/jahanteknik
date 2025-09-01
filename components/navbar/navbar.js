@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <navbar className=' w-[100%] h-[110px] bg-slate-100 p-5 flex  fixed'>
+        <navbar data-aos="zoom-out" className=' w-[100%] h-[110px] bg-slate-100 p-5 flex  fixed z-50'>
             <a className='flex-auto  w-20   ' href='/'>
                 <img src='./image/logojahan.png' className='w-[80px]' />
             </a>
