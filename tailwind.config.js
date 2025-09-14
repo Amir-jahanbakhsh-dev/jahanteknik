@@ -10,8 +10,9 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      'b-kamaran':['b-kamran'],
-      'Mj_Titr':['mj-titr']
+      'BTitrBd':['BTitrBd'],
+      'BNazanin':['BNazanin'],
+      'BMitra':['BMitra']
       },
     extend: {
       
