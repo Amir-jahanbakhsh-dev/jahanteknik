@@ -1,15 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   @font-face {
-    font-family: 'Kamran';
-    src: url(/public/B\ Kamran_0.ttf) format('ttf');
+    font-family: 'BTitrBd';
+    src: url(/public/BTitrBd.woff) format('woff');
   }
   @font-face {
-    font-family: 'Mj_Titr';
-    src: url(/public/Mj_Titr\ DF.ttf) format('ttf');
-    }
+    font-family: 'BNazanin';
+    src: url(/public/BNazanin.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'BMitra';
+    src: url(/public/BMitra.ttf) format('ttf');
+  }
 }
 header{
   background-image: url(../public/image/r001.jpg);
