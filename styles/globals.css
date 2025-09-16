@@ -14,3 +14,13 @@
 header{
   background-image: url(../public/image/r001.jpg);
 }
+.hambergerMenue{
+  position: relative;
+}
+.hambergerMenue::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 10px;
+color: black;
+}

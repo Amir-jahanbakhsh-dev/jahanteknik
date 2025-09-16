@@ -1,27 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
-    return (
-        <navbar data-aos="zoom-out" className=' w-[100%] h-[110px] bg-slate-100 p-5 flex  fixed z-50'>
-            <a className='flex-auto  w-20   ' href='/'>
-                <img src='./image/logojahan.png' className='w-[80px]' />
-            </a>
-            <div className='flex-auto mt-5 '>
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-                <ul className=' flex gap-4 w-[50%] absolute right-[15%] ps-10 '>
-                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative  text-center rounded-2xl hover:font-bold hover:border-b-red-800  hover:border-b-[2px]'><a className='font-mj-titr' href='/'>خانه</a></li>
-                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative  text-center rounded-2xl hover:font-bold hover:border-b-red-800  hover:border-b-[2px]'><a href=''>مقالات</a></li>
-                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative  text-center rounded-2xl hover:font-bold hover:border-b-red-800  hover:border-b-[2px]'><a href=''>آدرس</a></li>
-                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative  text-center rounded-2xl hover:font-bold hover:border-b-red-800  hover:border-b-[2px]'><a href=''> رزرو نوبت</a></li>
-                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative  text-center rounded-2xl hover:font-bold hover:border-b-red-800  hover:border-b-[2px]'><a href=''> درباره ما</a></li>
+    const toggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    }
+
+    return (
+        <nav data-aos="zoom-out" className=' w-[100%] h-[110px] bg-slate-100 p-5 flex fixed z-50'>
+            <a className='flex-auto w-20' href='/'>
+                <img src='./image/logojahan.png' className='w-[80px]' alt="Logo" />
+            </a>
+            <div className='flex-auto mt-5'>
+                <ul className='max-md:hidden flex gap-4 w-[50%] absolute right-[15%] ps-10'>
+                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a className='font-mj-titr' href='/'>خانه</a></li>
+                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''>مقالات</a></li>
+                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''>آدرس</a></li>
+                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''> رزرو نوبت</a></li>
+                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''> درباره ما</a></li>
                 </ul>
             </div>
-            <a href='' className='transition-all ease-linear duration-300 flex-auto absolute  w-30 left-10 hover:scale-110'>
-                <img src="./image/UserIcon.png" alt="" className='w-[50px] ms-4' />
-                <span className='font-Mj_Titr font-bold'>حساب کاربری </span>
+            <div onClick={toggleModal} data-aos="zoom-out" className="hidden max-md:block relative w-12 h-12 mt-5 cursor-pointer bg-slate-800">
+                <img src="/image/hamberger.png" alt="Navbar Toggle Icon" />
+            </div>
+            <a href='' className='max-md:hidden transition-all ease-linear duration-300 flex-auto absolute w-30 left-10 hover:scale-110'>
+                <img src="./image/UserIcon.png" alt="User Icon" className='w-[50px] ms-4' />
+                <span className='font-Mj_Titr font-bold'>حساب کاربری</span>
             </a>
-        </navbar>
+
+            {/* مدیریت نمایش و پنهان کردن مودال به صورت کامل  */}
+            {isModalOpen && (
+                <>
+                    {/* Backdrop */}
+                    <div onClick={toggleModal} className=" inset-0 bg-gray-600 bg-opacity-50 z-40"></div>
+
+                    {/* Modal Panel */}
+                    <div id="modal-panel" className="fixed inset-0 flex items-center justify-center p-4 z-50">
+                        <div className="relative top-[200px] bg-white rounded-lg transition-all ease-linear duration-250 shadow-xl max-w-lg mx-auto p-6">
+                            <div className="flex justify-between items-center pb-3">
+                                <button onClick={toggleModal} className="text-gray-400 hover:text-gray-600">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div className="my-4">
+                                <ul className='gap-4 w-[50%]  ps-10'>
+                                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a className='font-mj-titr' href='/'>خانه</a></li>
+                                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''>مقالات</a></li>
+                                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''>آدرس</a></li>
+                                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''> رزرو نوبت</a></li>
+                                    <li className='transition-all ease-linear duration-100 flex-1 p-[5px] relative text-center rounded-2xl hover:font-bold hover:border-b-red-800 hover:border-b-[2px]'><a href=''> درباره ما</a></li>
+                                </ul>
+                            </div>
+                            <div className="flex justify-end pt-4 border-t border-gray-200">
+                                <button id="cancel-modal" onClick={toggleModal} className="ml-2 px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">بستن</button>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
+        </nav>
     );
-}
+};
 
 export default Navbar;

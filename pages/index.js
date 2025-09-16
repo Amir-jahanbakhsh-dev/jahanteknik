@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <body dir="rtl" className="relative">
       <Navbar   />
-      <Header  />
+      {/* <Header  /> */}
 
     </body>
   );
