@@ -5,20 +5,21 @@
 @layer base {
   @font-face {
     font-family: 'BTitrBd';
-    src: url(/public/BTitrBd.woff) format('woff');
+    src: url(/BTitrBd.woff) format('woff');
   }
   @font-face {
     font-family: 'BNazanin';
-    src: url(/public/BNazanin.ttf) format('ttf');
+    src: url(/BNazanin.ttf) format('ttf');
   }
   @font-face {
     font-family: 'BMitra';
-    src: url(/public/BMitra.ttf) format('ttf');
+    src: url(/BMitra.ttf) format('ttf');
   }
 }
 header{
-  background-image: url(../public/image/r001.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.99),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.99)), url(../public/image/r001.jpg);
 }
+
 .hambergerMenue{
   position: relative;
 }
