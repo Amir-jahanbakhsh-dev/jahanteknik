@@ -1,5 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config}  */
+
 module.exports = {
+   plugins: [
+    require('tailwindcss-textshadow')
+  ],
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",

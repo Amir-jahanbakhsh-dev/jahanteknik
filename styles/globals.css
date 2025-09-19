@@ -16,8 +16,11 @@
     src: url(/BMitra.ttf) format('ttf');
   }
 }
+*{
+  transition: all ease 0.5s;
+}
 header{
-  background: linear-gradient(rgba(0, 0, 0, 0.99),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.99)), url(../public/image/r001.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.99),rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.99)), url(../public/image/r001.jpg);
 }
 
 .hambergerMenue{

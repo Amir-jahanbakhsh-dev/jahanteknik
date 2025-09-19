@@ -2,8 +2,8 @@
 import Worker from "./worker/worker"
 export default function Workers(){
     return(
-        <section className="workers_cont d-flex align-items-center justify-content-center row-cols-2">
-            <Worker className="col" name="استاد محمد جهانبخش" img="./image/user admin.png" task="مدیر مجموعه و مکانیک"/>
+        <section data-aos="fade-right" className="w-[100%]   flex align-middle justify-center p-5 bg-gray-500">
+            <Worker name="استاد محمد جهانبخش" Image ="./image/user admin.png" task="مدیر مجموعه و مکانیک"/>
         </section>
     )
 }
