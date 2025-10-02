@@ -10,7 +10,7 @@ export default function Desc(prop) {
             <div data-aos="fade-right" className="pElem ps-5 text-base/8 pt-10 font-BNazanin  text-lg">
               {prop.desc}
             </div>
-            <Image  data-aos="fade-left" src={prop.src} className="w-[20%] pb-10" alt="" />
+            <img  data-aos="fade-left" src={prop.src} className="w-[20%] pb-10" alt="" />
           </div>
         </div>
       </div>
