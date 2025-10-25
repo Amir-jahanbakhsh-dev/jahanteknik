@@ -7,12 +7,16 @@ import { useEffect } from 'react';
 import { useAos } from '../hooks/useAos';
 import Image from 'next/image';
 import Link from 'next/link';
+import ImageSlider from '@/components/slider/slider';
+import Art from '@/components/articles/art';
 
 const HomePage = () => {
     return (
         <section dir='rtl'>
         <Header />
         <Services />
+        <Art/>
+        <ImageSlider/>
         <Desc
           title="خدمات تعمیرگاه خودرو در اصفهان - جهان تکنیک"
           desc={

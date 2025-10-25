@@ -28,10 +28,6 @@ const Navbar = () => {
                 <div onClick={toggleModal} data-aos="zoom-out" className="hidden max-md:block relative w-12 h-12 mt-5 cursor-pointer bg-slate-800">
                     <img  src="/image/hamberger.png" alt="Navbar Toggle Icon" />
                 </div>
-                <Link href='/user' className='  transition-all ease-linear duration-300 flex-auto absolute w-30 me-7 left-12 hover:scale-110'>
-                    <img  src="./image/UserIcon.png" alt="User Icon" className='w-[50px] ms-4' />
-                    <span className='font-Mj_Titr font-bold'>حساب کاربری</span>
-                </Link>
 
                 {/* مدیریت نمایش و پنهان کردن مودال به صورت کامل  */}
                 {isModalOpen && (
