@@ -9,11 +9,15 @@
   }
   @font-face {
     font-family: 'BNazanin';
-    src: url(/BNazanin.ttf) format('ttf');
+    src: url(/public/BNazanin.ttf) format('ttf');
   }
   @font-face {
     font-family: 'BMitra';
-    src: url(/BMitra.ttf) format('ttf');
+    src: url(/public/BMitra.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'IranianSans';
+    src: url(/public/Iranian-Sans.woff) format('woff');
   }
 }
 *{
