@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "node scripts/integrate_content.js",
-    "dev": "npm run prebuild && next dev",
-    "build": "npm run prebuild && next build", 
+    "prebuild": "",
+    "dev": " next dev",
+    "build": " next build", 
     "start": "next start"
   },
   "dependencies": {

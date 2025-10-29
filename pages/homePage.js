@@ -7,10 +7,10 @@ import { useEffect } from 'react';
 import { useAos } from '../hooks/useAos';
 import Image from 'next/image';
 import Link from 'next/link';
-import ImageSlider from '@/components/slider/slider';
 import Art from '../components/articles/art';
 import BoxArt from 'components/articles/box-art';
 import articlesData from '../data/articlesData.json';
+import Galery from "@/components/galery/galery"
 
 
 const HomePage = () => {
@@ -31,7 +31,7 @@ const HomePage = () => {
           return <BoxArt title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
         })
       } />
-      <ImageSlider />
+      <Galery/>
       <Desc
         title="خدمات تعمیرگاه خودرو در اصفهان - جهان تکنیک"
         desc={
