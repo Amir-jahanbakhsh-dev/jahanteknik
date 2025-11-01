@@ -23,12 +23,12 @@ const HomePage = () => {
         <>
           
           <h2 className="ps-10 h1 text-center font-BTitrBd text-blue-500-800 text-3xl">مقالات</h2>
-          <a className='text-indigo-600' href="/articles">دیدن همه</a>
+          <Link className='text-indigo-600' href="/articles">دیدن همه</Link>
         </>
       }
       desc={
         articlesData.slice(0,5).map(art=>{
-          return <BoxArt title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
+          return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
         })
       } />
       <Galery/>

@@ -14,7 +14,7 @@ const Navbar = () => {
         <>
             <nav data-aos="zoom-out" dir='rtl' className=' w-[100%] h-[110px] bg-slate-100 p-5 flex fixed z-50'>
                 <Link className='flex-auto w-20' href='/'>
-                    <img  src='/image/logojahan.png' className='w-[80px]' alt="Logo" />
+                    <Image  src='/image/logojahan.png' className='w-[80px]' alt="Logo" />
                 </Link>
                 <div className='flex-auto mt-5'>
                     <ul className='max-md:hidden flex gap-4 w-[50%] font-BTitrBd  absolute right-[15%] ps-10'>
@@ -26,7 +26,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div onClick={toggleModal} data-aos="zoom-out" className="hidden max-md:block relative w-12 h-12 mt-5 cursor-pointer bg-slate-800">
-                    <img  src="/image/hamberger.png" alt="Navbar Toggle Icon" />
+                    <Image  src="/image/hamberger.png" alt="Navbar Toggle Icon" />
                 </div>
 
                 {/* مدیریت نمایش و پنهان کردن مودال به صورت کامل  */}

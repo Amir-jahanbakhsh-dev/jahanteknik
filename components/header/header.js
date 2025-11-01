@@ -11,7 +11,7 @@ const Header = () => {
                     <p data-aos="fade-left" className='basis-1/2  font-bold mt-[5vh]  font-IranianSans  text-[1.5rem] text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000] text-[#E0E0E0]   top-[50%] text-center '>جهانبخش :  09935566903</p>
                     <p  className='basis-1/2  font-bold mt-[5vh] text-center font-[IranianSans]  text-[1rem]  text-[#E0E0E0]  '>مکانیکی در خیابان امام خمینی</p>
                 </div>
-                <img alt="" data-aos="fade-left" className='delay-100  max-md:w-[70%] relative -top-[20vh] max-md:top-[1%]  min-lg:left-[5vh] ' src="/image/logojahan.png" />
+                <Image alt="" data-aos="fade-left" className='delay-100  max-md:w-[70%] relative -top-[20vh] max-md:top-[1%]  min-lg:left-[5vh] ' src="/image/logojahan.png" />
             </header>
 
         </>

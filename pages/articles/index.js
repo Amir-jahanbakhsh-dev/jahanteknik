@@ -36,7 +36,7 @@ const articles = () => {
             <Art title={<h1 className="ps-10 h1 text-center font-BTitrBd text-blue-500-800 text-3xl ">مقالات</h1>}
                 desc={
                     articlesData.map(art => {
-                        return <BoxArt title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
+                        return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
                     })}
                     />
                     <Footer />

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const Art = (prop) => {
       return (
     <section className="flex justify-center">
@@ -12,7 +12,7 @@ const Art = (prop) => {
             <div data-aos="fade-right" className="pElem ps-5 text-base/8 pt-10 font-BNazanin  text-lg flex justify-around flex-wrap">
               {prop.desc}
             </div>
-            <img  data-aos="fade-left" src={prop.src} className="w-[20%] pb-10" alt="" />
+            <Image  data-aos="fade-left" src={prop.src} className="w-[20%] pb-10" alt="" />
           </div>
         </div>
       </div>
