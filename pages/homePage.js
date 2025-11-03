@@ -18,6 +18,13 @@ const HomePage = () => {
     <section dir='rtl'>
       <Header />
       <Services />
+            <Link className='block pt-12' id="darbareh" href="#darbareh" aria-label="درباره ما">
+        <Desc
+          title="درباره ما"
+          desc="ما این افتخار را داریم که بیش از ده سال سابقه در خدمت رسانی به مردم بوده‌ایم و کلیه‌ی امور مکانیکی ماشین‌های ایرانی و چینی و کره ای را اعم از مکانیکی خودرو، تعمیرات موتور، گیربکس، زیر و بند، جعبه فرمان و سرویس پلوس و اکسل را انجام داده‌ایم و با عیب یابی تخصصی  قصد داریم که با ارائه خدمات بهتر نیازهای مشتریان نسبت به مخارج سنگین ماشین‌های امروزی کاهش دهیم."
+          src="./image/pngwing.com.png"
+        />
+      </Link>
       <Art 
       title={
         <>
@@ -28,7 +35,7 @@ const HomePage = () => {
       }
       desc={
         articlesData.slice(0,5).map(art=>{
-          return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
+          return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug+'.html'} />
         })
       } />
       <Galery/>
@@ -55,13 +62,7 @@ const HomePage = () => {
       />
 
 
-      <Link className='block pt-12' id="darbareh" href="#darbareh" aria-label="درباره ما">
-        <Desc
-          title="درباره ما"
-          desc="ما این افتخار را داریم که بیش از ده سال سابقه در خدمت رسانی به مردم بوده‌ایم و کلیه‌ی امور مکانیکی ماشین‌های سواری را اعم از مکانیکی خودرو، تعمیرات موتور، گیربکس، زیر و بند، جعبه فرمان و سرویس پلوس و اکسل را انجام داده‌ایم و قصد داریم که با هدف ارائه خدمات بهتر نیازهای مشتریان نسبت به مخارج سنگین ماشین‌های امروزی کاهش دهیم."
-          src="./image/pngwing.com.png"
-        />
-      </Link>
+
 
       <Workers />
 
