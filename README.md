@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# تحلیل وبسایت جهان تکنیک
+معرفی وبسایت
+وبسایت جهان تکنیک یک تعمیرگاه تخصصی در حوزه تعمیرات تجهیزات الکترونیکی است که از طریق وب‌سایت [jahanteknik.ir](https://jahanteknik.ir) خدمات خود را ارائه می‌دهد. این سایت با هدف سهولت در ارتباط با مشتریان و اطلاع‌رسانی در زمینه تعمیرات، راه‌اندازی شده است.
 
-## Getting Started
+---
+طراحی و رابط کاربری
+- رابط کاربری: وبسایت دارای طراحی ساده و کاربرپسند است، با منویی واضح و بخش‌های مختلف قابل دسترسی سریع.
+- رنگ‌بندی: رنگ‌های رسمی و مطمئن که حس اعتماد و حرفه‌ای بودن را منتقل می‌کند.
+- واکنش‌گرایی: سایت پاسخگو (Responsive) است و در دستگاه‌های مختلف مانند موبایل، تبلت و کامپیوتر به خوبی نمایش داده می‌شود.
 
-First, run the development server:
+---
+محتوا و خدمات ارائه شده
+- نوع خدمات: تعمیر انواع دستگاه‌های الکترونیکی و تجهیزات الکترونیک (مثل موبایل، لپ‌تاپ، تلویزیون و ...).
+- اطلاعات تماس: شماره تماس، آدرس فیزیکی، فرم درخواست خدمات و نقشه مکان در سایت قرار دارند.
+- صفحات: صفحه‌های خدمات، درباره ما، تماس با ما و نمونه کارها.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
+فناوری و عملکرد سایت
+- سرعت: بارگذاری صفحات مناسب است و تجربه کاربری خوبی را فراهم می‌کند.
+- بهینه‌سازی سئو: استفاده از برچسب‌ها و عناوین مناسب برای بهبود دیده شدن در موتورهای جست‌وجو.
+- امنیت: احتمالاً از SSL (https) استفاده شده است که امنیت سایت را تضمین می‌کند.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+امنیت و حریم خصوصی
+-  HTTPS: سایت از پروتکل امن استفاده می‌کند.
+- حریم خصوصی: سیاست‌های مربوط به حریم خصوصی و جمع‌آوری اطلاعات باید در صفحه مشخص شده باشد.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
+نقاط قوت
+- طراحی کاربرپسند و ساده.
+- اطلاعات تماس واضح و قابل دسترسی.
+- تمرکز بر خدمات تعمیرات و تخصصی بودن.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
+پیشنهادات توسعه
+- افزودن قسمت سوالات متداول (FAQ).
+- نمایش نمونه کارهای بیشتر و نظرات مشتریان.
+- توسعه امکانات آنلاین مثل ثبت درخواست تعمیر و پیگیری وضعیت.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
+نتیجه‌گیری
+وبسایت جهان تکنیک یک سایت تعمیرگاهی حرفه‌ای است که تمرکز زیادی بر سهولت دسترسی و ارائه خدمات در حوزه تعمیرات دارد. با بهبودهای جزئی در سئو و افزایش امکانات تعاملی، می‌تواند تجربه کاربری بهتر و بیشتر جذب کند.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+*نویسنده: [نام خودت]*  
+*تاریخ: [تاریخ امروز]*
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
