@@ -1,17 +1,59 @@
-import React from 'react';
+'use client';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
+// وارد کردن استایل‌های پیش‌فرض
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 const Header = () => {
     return (
         <>
-            <header data-aos="zoom-in" className='flex flex-wrap  bet w-[100%]  z-0 relative  bg-cover bg-scroll  pt-[25%] ps-11 d-flex justify-around align-middle  bg-no-repeat bg-center'>
-                <div>
-                    <h1 data-aos="zoom-in" className='basis-1/2  font-bold mt-[10vh]  font-[BTitrBd] font-bold text-[3.5rem] text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000] text-[#E0E0E0]   top-[50%] text-center '>بهترین مکانیکی در اصفهان | ایرانی و چینی</h1>
-                    <h3 data-aos="zoom-in" className='basis-1/2  font-bold mt-[5vh]  font-[BTitrBd] font-bold text-[2.5rem] text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000] text-[#E0E0E0]   top-[50%] text-center '>(باضمانت و تخصصی ترین  مکانیکی در اصفهان)</h3>
-                    <p data-aos="zoom-in" className='basis-1/2  font-bold mt-[5vh]  font-IranianSans  text-[1.5rem] text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000] text-[#E0E0E0]   top-[50%] text-center '>جهانبخش :  09935566903</p>
-                    <p  className='basis-1/2  font-bold mt-[5vh] text-center font-[IranianSans]  text-[1rem]  text-[#E0E0E0]  '>مکانیکی در خیابان امام خمینی</p>
-                </div>
-                <Image  alt="" data-aos="fade-left" className='delay-100  max-md:w-[70%] relative -top-[20vh] max-md:top-[1%]  min-lg:left-[5vh] ' src="/image/logojahan.png" />
+            <header dir='rtl' data-aos="zoom-in" className='bet w-full '>
+                <Link href="/sliderPage">
+                    <Swiper
+                        modules={[Autoplay, Navigation, Pagination]} // ماژول Autoplay حتماً باید اینجا معرفی شود
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        }}
+                        className="mt-[35vh] h-[100vh] mySwiper "
+                    >
+                        <SwiperSlide className="relative  bg-cover  bg-[url('/image/slide1.jpg')] ">
+                            <div className="absolute z-0 inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50   ">
+                            </div>
+                            <div className='absolute z-1  right-12 top-10 pt-[15vh] text-center text-white'>
+                                <h2 className='text-[15vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
+                                <p className='text-[8vh] shadow-xl pb-10 '>بهترین مکانیکی در اصفهان</p>
+                                <span>09935566903 جهانبخش</span>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className="relative  bg-cover  bg-[url('/image/slide2.webp')] ">
+                            <div className="absolute z-0 inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50   ">
+                            </div>
+                            <div className='absolute z-1  right-12 top-10 pt-[15vh] text-center text-white'>
+                                <h2 className='text-[15vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
+                                <p className='text-[8vh] shadow-xl pb-10 '>پذیرش انواع خودروهای ایرانی و چینی</p>
+                                <span>09935566903 جهانبخش</span>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className="relative  bg-cover  bg-[url('/image/slide4.jpg')] ">
+                            <div className="absolute z-0 inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50   ">
+                            </div>
+                            <div className='absolute z-1  right-12 top-10 pt-[15vh] text-center text-white'>
+                                <h2 className='text-[15vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
+                                <p className='text-[8vh] shadow-xl pb-10 '>ارائه خدمات مکانیکی و زیروبندسازی </p>
+                                <span>09935566903 جهانبخش</span>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </Link>
             </header>
 
         </>
