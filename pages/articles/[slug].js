@@ -68,10 +68,6 @@ const ArticlePage = ({ article }) => {
         <h1 className='font-BTitrBd text-xl'>{article.title}</h1>
         <p className="text-gray-500 font-BNazanin">تاریخ: {article.date}</p>
 
-        {/*
-          ⚠️ توجه: اگر محتوای article.content حاوی HTML است، از dangerouslySetInnerHTML
-          یا یک کتابخانه‌ی رندر مارک‌داون (مانند 'react-markdown') استفاده کنید.
-        */}
         <div className="mt-6 text-lg font-BNazanin">
           {article.content}
         </div>

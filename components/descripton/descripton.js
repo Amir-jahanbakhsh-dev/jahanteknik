@@ -7,10 +7,10 @@ export default function Desc(prop) {
         <div className=" col-12 col-lg-9">
           <h3 className="h1 text-center font-BTitrBd text-blue-500-800 text-3xl">{prop.title}</h3>
           <div className="flex flex-wrap justify-around ">
-            <div data-aos="fade-right" className="pElem ps-5 text-base/8 pt-10 font-BNazanin  text-lg">
+            <div data-aos="fade-right" className='pElem ps-5 text-base/8 pt-10 font-BNazanin text-center text-lg'>
               {prop.desc}
             </div>
-            <Image width={80} height={10}  data-aos="fade-left" src={prop.src} className="w-[20%] pb-10" alt="" />
+            <Image width={30} height={10}  data-aos="fade-left" src={prop.src} className="w-[15%] pb-10" alt="" />
           </div>
         </div>
       </div>

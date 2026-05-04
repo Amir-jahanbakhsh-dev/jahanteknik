@@ -35,23 +35,7 @@ const HomePage = () => {
             src="./image/pngwing.com.png"
           />
         </Link>
-        <Art
-          title={
-            <>
-
-              <h2 className="ps-10 h1 text-center font-BTitrBd text-blue-500-800 text-3xl">مقالات</h2>
-              <Link className='text-indigo-600' href="/articles">دیدن همه</Link>
-            </>
-          }
-          desc={
-            articlesData.slice(0, 5).map(art => {
-              return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug + '.html'} />
-            })
-          } />
-        <Link href="/galeryPage">
-          <Galery />
-        </Link>
-        <Link href="/workServicePage">
+                <Link href="/workServicePage">
           <Desc
             title="خدمات تعمیرگاه خودرو در اصفهان - جهان تکنیک"
             desc={
@@ -74,6 +58,23 @@ const HomePage = () => {
             src="/image/png-image.png"
           />
         </Link>
+        <Art
+          title={
+            <>
+
+              <h2 className="ps-10 h1 text-center font-BTitrBd text-blue-500-800 text-3xl">مقالات</h2>
+              <Link className='text-indigo-600' href="/articles">دیدن همه</Link>
+            </>
+          }
+          desc={
+            articlesData.slice(0, 5).map(art => {
+              return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug + '.html'} />
+            })
+          } />
+        <Link href="/galeryPage">
+          <Galery />
+        </Link>
+
 
 
 
