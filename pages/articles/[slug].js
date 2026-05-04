@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import Desc from "@/components/descripton/descripton";
 
+
 // 1. **getStaticProps**: واکشی داده‌های مقاله خاص
 export async function getStaticProps({ params }) {
   console.log(await articlesData);
@@ -46,6 +47,8 @@ const ArticlePage = ({ article }) => {
   return (
 
     <div dir='rtl'>
+      <link rel="canonical" href="https://jahanteknik.ir/" />
+      <meta name="robots" content="noindex, follow"></meta>
       <header>
         <nav>
           <Link href="#" className="nav-link active icons poshtiban text-light text-icon" aria-label="گفتگو">

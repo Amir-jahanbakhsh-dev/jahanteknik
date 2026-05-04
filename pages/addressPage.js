@@ -9,6 +9,8 @@ const AddressPage = () => {
     return (
         <>
             <Head>
+                <link rel="canonical" href="https://jahanteknik.ir/" />
+                <meta name="robots" content="noindex, follow"></meta>
                 <title>آدرس مکانیکی در اصفهان|جهان تکنیک</title>
                 <meta name="description" content="بهترین مکانیکی در اصفهان و پذیرش خودرو های ایرانی و چینی خیابان امام خمینی بعدر از کوچه 108 قبل از سه راه بهارستان جنب برق سهیل" />
             </Head>

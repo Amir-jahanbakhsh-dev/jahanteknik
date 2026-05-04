@@ -23,32 +23,32 @@ const Header = () => {
                             delay: 5000,
                             disableOnInteraction: false,
                         }}
-                        className="mt-[35vh] h-[100vh] mySwiper "
+                        className="mt-[35vh] h-[50vh] mySwiper "
                     >
                         <SwiperSlide className="relative  bg-cover bg-center bg-[url('/image/slide1.jpg')] ">
                             <div className="absolute z-0 inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50   ">
                             </div>
-                            <div className='absolute z-1  right-12 top-10 pt-[10vh] text-center text-white'>
-                                <h2 className='text-[10vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
-                                <p className='text-[6vh] shadow-xl pb-10 '>بهترین مکانیکی در اصفهان</p>
+                            <div className='absolute z-1  right-12 top-10 pt-[1vh] text-center text-white'>
+                                <h2 className='text-[8vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
+                                <p className='text-[5vh] shadow-xl pb-10 '>بهترین مکانیکی در اصفهان</p>
                                 <span>09935566903 جهانبخش</span>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="relative  bg-cover bg-center bg-[url('/image/slide2.webp')] ">
                             <div className="absolute z-0 inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50   ">
                             </div>
-                            <div className='absolute z-1  right-12 top-10 pt-[10vh] text-center text-white'>
-                                <h2 className='text-[10vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
-                                <p className='text-[6vh] shadow-xl pb-10 '>پذیرش انواع خودروهای ایرانی و چینی</p>
+                            <div className='absolute z-1  right-12 top-10 pt-[1vh] text-center text-white'>
+                                <h2 className='text-[8vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
+                                <p className='text-[5vh] shadow-xl pb-10 '>پذیرش انواع خودروهای ایرانی و چینی</p>
                                 <span>09935566903 جهانبخش</span>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="relative  bg-cover bg-center  bg-[url('/image/slide4.jpg')] ">
                             <div className="absolute z-0 inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50   ">
                             </div>
-                            <div className='absolute z-1  right-12 top-10 pt-[10vh] text-center text-white'>
-                                <h2 className='text-[10vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
-                                <p className='text-[6vh] shadow-xl pb-10 '>ارائه خدمات مکانیکی و زیروبندسازی </p>
+                            <div className='absolute z-1  right-12 top-10 pt-[1vh] text-center text-white'>
+                                <h2 className='text-[8vh] font-BTitrBd text-red-500 '>جهان تکنیک</h2>
+                                <p className='text-[5vh] shadow-xl pb-10 '>ارائه خدمات مکانیکی و زیروبندسازی </p>
                                 <span>09935566903 جهانبخش</span>
                             </div>
                         </SwiperSlide>

@@ -8,6 +8,8 @@ const SliderPage = () => {
     return (
         <>
             <Head>
+                <link rel="canonical" href="https://jahanteknik.ir/" />
+                <meta name="robots" content="noindex, follow"></meta>
                 <title>بهترین مکانیکی در اصفهان | جهان تکنیک</title>
                 <meta name="description" content="بهترین مکانیکی در اصفهان و پذیرش خودرو های ایرانی و چینی" />
             </Head>

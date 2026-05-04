@@ -9,6 +9,8 @@ const ServicesPage = () => {
     return (
         <>
             <Head>
+                <link rel="canonical" href="https://jahanteknik.ir/" />
+                <meta name="robots" content="noindex, follow"></meta>
                 <title>مکانیکی در اصفهان</title>
                 <meta name="description" content="بهترین مکانیکی در اصفهان و پذیرش خودرو های ایرانی و چینی" />
             </Head>

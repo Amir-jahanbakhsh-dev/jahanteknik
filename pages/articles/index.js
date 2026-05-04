@@ -22,6 +22,9 @@ const articles = () => {
 
     return (
         <div dir="rtl">
+            <link rel="canonical" href="https://jahanteknik.ir/" />
+            <meta name="robots" content="noindex, follow"></meta>
+
             <header>
                 <nav>
                     <Link href="#" className="nav-link active icons poshtiban text-light text-icon" aria-label="گفتگو">
@@ -38,8 +41,8 @@ const articles = () => {
                     articlesData.map(art => {
                         return <BoxArt key={art} title={art.title} img='image/s1.jpg' desc={art.excerpt} link={art.slug} />
                     })}
-                    />
-                    <Footer />
+            />
+            <Footer />
         </div>
     )
 }
